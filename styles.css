@@ -1,0 +1,52 @@
+body {
+  margin: 20px;
+  font-family: Geneva, Tahoma, sans-serif, Verdana;
+  background-color: black;
+}
+
+.avatar {
+  width: 150px;
+}
+
+.card {
+  padding: 20px;
+  display: flex; /* treats each elemet as single child, there each get's a its column    */
+  justify-content: space-around;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  color: #2b2839;
+  background: #ddebf8;
+  border-bottom: 6px solid #d8cefe;
+  border-radius: 25px;
+  box-shadow: 10px 10px lightblue;
+  transition: background-color 0.7s, transform 0.3s;
+
+  /* flex box containers are by default display block :)
+  and "display: block" takes all the <------>
+  avaible space in the horizontal axis   
+  
+  to center block elements <------>
+  set margin ---> right : auto;
+  set margin <--- left  : auto;
+  */
+}
+
+.card:hover {
+  background-color: yellow;
+  border-radius: 5px;
+  transform: scale(1.1);
+}
+.card:hover h3{
+    color: #140e2e;
+}
+.card:hover p{
+    color: blue;
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+.dotted-line {
+  border: 1px solid blue;
+}
